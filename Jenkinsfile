@@ -25,7 +25,7 @@ pipeline {
   -Dsonar.projectKey=test \
   -Dsonar.projectName='test' \
   -Dsonar.host.url=http://18.217.122.212:9000 \
-  -Dsonar.token=sqp_768d4b59201e21e73c882fd75cb45daedc462f84"
+  -Dsonar.token=sqp_339f8bf63556c5c6dfe3e3f66d60ee0498785016"
       }
     }
   }
