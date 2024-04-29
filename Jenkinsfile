@@ -19,5 +19,14 @@ pipeline {
         sh 'mvn package'
       }
     }
+    stage('codequality'){
+        steps{
+       sh "mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=test \
+  -Dsonar.projectName='test' \
+  -Dsonar.host.url=http://18.217.122.212:9000 \
+  -Dsonar.token=sqp_768d4b59201e21e73c882fd75cb45daedc462f84"
+      }
+    }
   }
 }
