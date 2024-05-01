@@ -22,9 +22,9 @@ pipeline {
      stage('codequality'){
         steps{
        sh "mvn clean verify sonar:sonar \
-        -Dsonar.projectKey=new \
-        -Dsonar.host.url=http://3.16.160.73:9000 \
-        -Dsonar.host=sqp_016271a16f0658ed81dfa440b6f5ee99114beb46"
+          -Dsonar.projectKey=test \
+          -Dsonar.host.url=http://18.117.156.176:9000 \
+          -Dsonar.login=sqp_3a973ad64d1e7f263a964f14733bffe98d72d398"
       }
     }
   }
